@@ -28,3 +28,31 @@ carLabel.onclick = function() {
         }
     })
 }
+
+const modalActivators = document.querySelectorAll('.modal-activator'),
+      expressActivator = document.getElementById('express'),
+      executiveActivator = document.getElementById('executive'),
+      modalBlock = document.querySelector('.modal-block'),
+      body = document.querySelector('body');
+
+
+modalActivators.forEach((item) => {
+    item.onclick = function(e) {
+        modalBlock.classList.add('modal-active');
+        body.classList.add('body-background');
+        console.log(item.id)
+        document.addEventListener('keydown', (e) => {
+            if (e.key == 'Escape') {
+                modalBlock.classList.remove('modal-active');
+                body.classList.remove('body-background');
+            }
+        });
+        document.addEventListener('click', (event) => {
+            if (event.target.classList.contains('body-background')) {
+                modalBlock.classList.remove('modal-active');
+                body.classList.remove('body-background');
+            }
+        })
+    }
+
+})

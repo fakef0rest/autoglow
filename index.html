@@ -630,7 +630,7 @@
                                                 <li>cup holders & compartments</li>
                                                 <li>windows</li>
                                             </ul>
-                                            <a href="#" class="btn btnThemeAlt position-absolute border-0 p-0 mx-auto" data-hover="Select">
+                                            <a href="javascript:;" class="btn btnThemeAlt position-absolute border-0 p-0 mx-auto" data-hover="Select">
                                                 <span class="d-block btnText">Choose Plan</span>
                                             </a>
                                         </article>
@@ -655,7 +655,7 @@
                                                 <li>all interior cup holders & compartments</li>
                                                 <li>windows</li>
                                             </ul>
-                                            <a href="#" class="btn btnThemeAlt position-absolute border-0 p-0 mx-auto" data-hover="Select">
+                                            <a href="javascript:;" id="express" class="btn btnThemeAlt position-absolute border-0 p-0 mx-auto modal-activator" data-hover="Select">
                                                 <span class="d-block btnText">Choose Plan</span>
                                             </a>
                                         </article>
@@ -680,7 +680,7 @@
                                                 <li>all interior cup holders & compartments</li>
                                                 <li>windows</li>
                                             </ul>
-                                            <a href="#" class="btn btnThemeAlt position-absolute border-0 p-0 mx-auto" data-hover="Select">
+                                            <a href="javascript:;" id="executive" class="btn btnThemeAlt position-absolute border-0 p-0 mx-auto modal-activator" data-hover="Select">
                                                 <span class="d-block btnText">Choose Plan</span>
                                             </a>
                                         </article>
@@ -839,13 +839,8 @@
                                     <!-- <div class="form-group col-12 col-md-4 mb-4 px-2">
                                         <input type="text" class="form-control w-100 rounded-sm" placeholder="Year">
                                     </div> -->
-                                    <div class="form-group col-12 mb-15 px-2">
+                                    <div class="form-group col-12 px-2">
                                         <textarea class="form-control form-textArea w-100 rounded-sm" placeholder="Additional Requirements"></textarea>
-                                    </div>
-
-                                    <div class="fieldHead col-12 mb-5 mb-md-8">
-                                        <h4 class="h4 mb-0">Select Location</h4>
-                                        <p>Select your nearest location here</p>
                                     </div>
 
                                     <div class="form-group col-12 mb-4 px-2">
@@ -1117,6 +1112,24 @@
 				<span class="sr-only">Loading...</span>
 			</div>
 		</div> -->
+    </div>
+
+
+    <div class="modal-block">
+        <div class="row justify-content-center">
+            <div class="form-group col-12 col-sm-6 mb-4 px-3">
+                <div class="apdInputWrap position-relative">
+                    <select name="size" class="form-control w-100 rounded-sm" id="cars">
+                        <optgroup label="Size">
+                            <option value="">$100- Mid-Size SUV</option>
+                            <option value="">$110- XL Truck or SUV</option>
+                        </optgroup>
+                    </select>
+    
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- include jQuery library -->
     <script src="js/jquery-3.4.1.min.js"></script>
