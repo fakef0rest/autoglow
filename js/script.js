@@ -33,7 +33,8 @@ const modalActivators = document.querySelectorAll('.modal-activator'),
       expressActivator = document.getElementById('express'),
       executiveActivator = document.getElementById('executive'),
       modalBlock = document.querySelector('.modal-block'),
-      body = document.querySelector('body');
+      body = document.querySelector('body'),
+      modalBlockButton = document.getElementById('modal-block');
 
 
 modalActivators.forEach((item) => {
@@ -52,6 +53,14 @@ modalActivators.forEach((item) => {
                 modalBlock.classList.remove('modal-active');
                 body.classList.remove('body-background');
             }
+            if (event.target.classList.contains('modal-close-button')) {
+                modalBlock.classList.remove('modal-active');
+                body.classList.remove('body-background');
+            } 
+            if (event.target.classList.contains('modal-send-button')) {
+                modalBlock.classList.remove('modal-active');
+                body.classList.remove('body-background');
+            } 
         })
     }
 
