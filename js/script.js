@@ -38,7 +38,7 @@ const modalActivators = document.querySelectorAll('.modal-activator'),
 
 
 modalActivators.forEach((item) => {
-    item.onclick = function(e) {
+    item.onclick = function() {
         modalBlock.classList.add('modal-active');
         body.classList.add('body-background');
         console.log(item.id)

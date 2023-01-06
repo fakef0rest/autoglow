@@ -15850,3 +15850,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .modal-btn {
 	font-size: 20px;
 }
+
+/* .services-article {
+	background-image: url('./images/truck-services.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.services-article a {
+	color: white;
+	position: relative;
+	z-index: 100000;
+}
+.services-article::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.services-article i {
+	font-size: 80px;
+}
+
+.services-article h2 {
+	text-align: center;
+}
