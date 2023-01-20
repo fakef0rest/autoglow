@@ -15889,3 +15889,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .navbar-toggler {
 	margin-right: 10px;
 }
+
+.success-main {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.success-image {
+	margin-bottom: 10px;
+	width: 10%;
+}
